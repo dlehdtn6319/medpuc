@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "MedPic Summary App",
+    "slug": "medpic-summary-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.rork.medpic-summary-app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow the app to access your camera",
+        "NSMicrophoneUsageDescription": "Allow the app to access your microphone",
+        "NSPhotoLibraryUsageDescription": "Allow the app to access your photos"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.dlehdtn6319.medpicsummaryapp",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow the app to access your camera",
+          "microphonePermission": "Allow the app to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "5ae5985b-c10e-4244-be2c-e9339a3cba33"
+      }
+    },
+    "owner": "dlwhdtn6319"
+  }
+}
